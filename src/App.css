@@ -1,0 +1,168 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', 'Roboto', 'Arial', sans-serif;
+  background: linear-gradient(135deg, #f6f8fa 0%, #e0e7ff 100%);
+  color: #222;
+  min-height: 100vh;
+}
+
+body.dark {
+  background: linear-gradient(135deg, #181a1b 0%, #23272a 100%);
+  color: #e5e7eb;
+}
+
+body.dark .App {
+  background: transparent;
+  color: #e5e7eb;
+}
+
+body.dark h1, body.dark h2, body.dark h3 {
+  color: #fbbf24;
+}
+
+body.dark li {
+  background: #23272a;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.25);
+}
+
+body.dark li > a {
+  color: #fbbf24;
+}
+
+body.dark li > div {
+  color: #b0b3b8;
+}
+
+body.dark li > p {
+  color: #e5e7eb;
+}
+
+body.dark input[type="text"], body.dark select {
+  background: #23272a;
+  color: #e5e7eb;
+  border: 1px solid #444;
+}
+
+body.dark button {
+  background: #fbbf24;
+  color: #23272a;
+}
+body.dark button:disabled {
+  background: #b0b3b8;
+  color: #23272a;
+}
+body.dark button:not(:disabled):hover {
+  background: #f59e42;
+}
+
+body.dark nav a {
+  color: #fbbf24;
+}
+
+body.dark footer {
+  background: #23272a;
+  color: #b0b3b8;
+  box-shadow: 0 -1px 8px rgba(0,0,0,0.25);
+}
+
+.App {
+  max-width: 800px;
+  margin: 2em auto;
+  padding: 0 1em;
+}
+
+h1, h2, h3 {
+  font-family: 'Segoe UI', 'Roboto', 'Arial', sans-serif;
+  font-weight: 700;
+  color: #1a202c;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.10);
+  padding: 2.5em 3em;
+  margin-bottom: 2.5em;
+  transition: box-shadow 0.2s, transform 0.2s;
+  font-size: 1.25em;
+}
+li:hover {
+  box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+  transform: translateY(-2px) scale(1.02);
+}
+li > a {
+  font-size: 2em;
+  font-weight: 700;
+  text-decoration: none;
+  color: #222;
+}
+li > div {
+  font-size: 1.1em;
+  color: #6b7280;
+  margin-bottom: 0.7em;
+}
+li > p {
+  margin: 0.7em 0 0 0;
+  color: #444;
+  font-size: 1.15em;
+}
+
+input[type="text"], select {
+  padding: 0.5em 1em;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 1em;
+  background: #fff;
+  margin-bottom: 0.5em;
+}
+
+button {
+  background: #2563eb;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 0.5em 1.2em;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+button:disabled {
+  background: #a5b4fc;
+  cursor: not-allowed;
+}
+button:not(:disabled):hover {
+  background: #1d4ed8;
+}
+
+nav a {
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 500;
+  margin-right: 1em;
+}
+nav a:last-child {
+  margin-right: 0;
+}
+
+footer {
+  background: #fff;
+  box-shadow: 0 -1px 8px rgba(0,0,0,0.04);
+}
+
+@media (max-width: 600px) {
+  .App {
+    padding: 0 0.2em;
+  }
+  li {
+    padding: 1.2em 0.5em;
+    font-size: 1em;
+  }
+  li > a {
+    font-size: 1.3em;
+  }
+}
